@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Styles/contacto.css">
+    <link rel="script" type="script/js" href="script.js">
+    <title>PeppoBytes - Contáctanos</title>
+    <link rel="icon" href="../Images/favicon_pb.png" type="image/x-icon">
+    <meta name="author" content="PeppoBytes Corporations">
+    <meta name="description" content="Pagina Web oficial de PeppoBytes">
+    <meta name="keywords" content="IT, medio ambiente, peppo, PeppoBytes, bytes, informatica, redes, reparacion, segunda mano, ecologico, servicios, empresa, hardware, innovacion, equipos informaticos, reciclaje, donaciones">
+</head>
+<body>
+    <header>
+        <div id="franja-buttons">
+          <div class="dropdown">
+            <button class="dropbtn"><a href="./acerca_de.html">ACERCA DE</a></button>
+            <div class="dropdown-content">
+              <a href="./nuestra_empresa.html">Nuestra Empresa</a>
+              <a href="./servicios.html">Servicios</a>
+              <a href="./trivial.html">Compromiso</a>
+            </div>
+          </div>
+          <button><a href="./productos.html">Productos</a></button>
+          <button><a href="./contacto.html">Contáctanos</a></button>  
+        </div>
+        <div id="lettering-box">
+          <a href="../index.html"><img class="lettering" src="../Images/peppo_lettering.png"></a>
+        </div>
+        <div id="SignIn">
+          <a href="../php/index.php">Iniciar Sesión</a>
+        </div> 
+    </header>
+      <main>
+        <section class="home">
+            <video class="video-slide active" src="../Videos/video_contacto.mp4" autoplay muted loop></video>
+            <div class="content active">
+              <h1>Contacta con nosotros:<br><span>Tu Voz Cuenta, Tu Satisfacción Nos Impulsa.</span></h1>
+            </div>  
+          </section> 
+        <article>
+            <div class="content">
+              <div class="title"><h1>Nuestro contacto:</h1></div>
+              <ul>
+                <li>Gmail: <p>peppobytes@gmail.com</p></li>
+                <li>Telefóno: <p>+64 --- --- ---</p></li>
+              </ul>
+            </div>
+        </article>
+        <article>
+        <div class="content">
+            <div class="title"><h1>Encuentranos:</h1></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.8281073600324!2d-3.123516959963856!3d43.321582547800496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4ef7b47f9006e7%3A0x4f5a33e5bfc9c88d!2sCentro%20de%20Formacion%20Somorrostro!5e0!3m2!1ses!2ses!4v1705182712900!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+        <section class="form_box">
+            <h1>Dejanos tu Mensaje:</h1>
+            <div class="form">
+                <form class="formulario">
+                    <div class="form-group">
+                        <label for="lastname">Nombre y Apellido</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="company" placeholder="Empresa">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" name="city" placeholder="Ciudad">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">País</label>
+                        <select id="country" name="country">
+                            <option value="">- Seleccionar -</option>
+                            <option value="AO">Angola</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BE">Bélgica</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CM">Camerún</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="CI">Wakanda</option>
+                            <option value="DO">República Dominicana</option>
+                            <option value="FR">Francia</option>
+                            <option value="LU">Luxemburgo</option>
+                            <option value="MX">México</option>
+                            <option value="MA">Marruecos</option>
+                            <option value="PA">Panamá</option>
+                            <option value="PE">Perú</option>
+                            <option value="PL">Polonia</option>
+                            <option value="PT">Portugal</option>
+                            <option value="RO">Rumanía</option>
+                            <option value="SN">Senegal</option>
+                            <option value="SG">Singapur</option>
+                            <option value="ES">España</option>
+                            <option value="CH">Suiza</option>
+                            <option value="TN">Túnez</option>
+                            <option value="AE">Emiratos Árabes Unidos</option>
+                            <option value="GB">Reino Unido</option>
+                            <option value="US">Estados Unidos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico (ejemplo: nombre@sitio.com)">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="number" type="tel" id="phone" name="phone" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Tema</label>
+                        <select id="typesubject" name="subject">
+                            <option value="">- Seleccionar -</option>
+                            <option value="the_group">El Grupo</option>
+                            <option value="responsibility">Responsabilidad</option>
+                            <option value="finance">Finanzas</option>
+                            <option value="compliance">Cumplimiento / Compliance</option>
+                            <option value="quality">Calidad</option>
+                            <option value="sponsoring">Patrocinio</option>
+                            <option value="innovation">Innovación</option>
+                            <option value="offers">Oferta</option>
+                            <option value="careers">Carreras profesionales</option>
+                            <option value="press">Prensa</option>
+                            <option value="accreditation">Solicitud de acreditación</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="centered-paragraph">
+                        <h3 for="data-consent">Consentimiento de datos personales</h3>
+                        <p>PeppoBytes hará todo lo posible para proteger la privacidad de los usuarios del sitio web de cumplimiento con las leyes y regulaciones vigentes. Cualquier información personal que se le solicite en este formulario es necesaria para que PeppoBytes comunique con usted y le envíe una respuesta a su pregunta o cualquier documentación comercial que pueda ser necesaria. Todos sus datos se mantendrán confidenciales.</p>
+                    </div>
+                    <div class="centered-paragraph">
+                        <input type="submit" value="Enviar" class="enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023-2024 PeppoBytes | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: url("../Images/waterfall.jpg");
+    background-position: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.container {
+    max-width: 400px;
+    background: rgb(0, 0, 0, 0.8);
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgb(177, 176, 176);
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    top: 6rem;
+}
+.structure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Form text*/
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'League Spartan', sans-serif;
+    margin: 1rem;
+}
+.subtitle {
+    font-size: 1rem;
+    color: #aeaeae;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Back button*/
+#back {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: rgb(255, 255, 255, 0.7);
+    margin-top: 2rem;
+    position: relative;
+    left: 35%;
+}
+#back > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+#back:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+#back:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #2d7739;
+    transform: translateY(-2px);
+}
+#back span a{
+    text-decoration: none;
+    color: black;
+}

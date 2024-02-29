@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../Styles/productos.css">
+    <title>PeppoBytes - Productos</title>
+    <link rel="icon" href="../Images/favicon_pb.png" type="image/x-icon">
+    <meta name="author" content="PeppoBytes Corporations">
+    <meta name="description" content="Pagina Web oficial de PeppoBytes">
+    <meta name="keywords" content="IT, medio ambiente, peppo, PeppoBytes, bytes, informatica, redes, reparacion, segunda mano, ecologico, servicios, empresa, hardware, innovacion, equipos informaticos, reciclaje, donaciones">
+</head>
+<body>
+  <header>
+    <div id="franja-buttons">
+      <div class="dropdown">
+        <button class="dropbtn"><a href="./acerca_de.html">ACERCA DE</a></button>
+        <div class="dropdown-content">
+          <a href="./nuestra_empresa.html">Nuestra Empresa</a>
+          <a href="./servicios.html">Servicios</a>
+          <a href="./trivial.html">Compromiso</a>
+        </div>
+      </div>
+      <button><a href="./productos.html">Productos</a></button>
+      <button><a href="./contacto.html">Contáctanos</a></button>  
+    </div>
+    <div id="lettering-box">
+      <a href="../index.html"><img class="lettering" src="../Images/peppo_lettering.png"></a>
+    </div>
+    <div id="SignIn">
+      <a href="../php/index.php">Iniciar Sesión</a>
+    </div> 
+  </header>
+    <main>
+      <section class="home">
+        <video class="video-slide active" src="../Videos/video_shop.mp4" autoplay muted loop></video>
+        <div class="content active">
+          <h1>Renovando Tecnología:<br><span> Descubre Nuestra Tienda de Productos Restaurados.</span></h1>
+        </div> 
+      </section>
+      <div class="productos"><h1>Nuestros Productos:</h1></div>
+      <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/Crucial DDR4.png" alt="">
+                    </div>
+                    <p class="descripcion">Crucial SO-DIMM DDR4</p>
+                    <span class="precio">30,99€</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/Kingstone SSD.png" alt="">
+                    </div>
+                    <p class="descripcion" id>Kingston A400 SSD</p>
+                    <span class="precio">52,99€</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/Volstistar.png" alt="">
+                    </div>
+                    <p class="descripcion">Voltistar Batería para HP</p>
+                    <span class="precio">29,90€</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/pc_sobremesa.png" alt="">
+                    </div>
+                    <p class="descripcion">PC Sobremesa</p>
+                    <span class="precio">174,99€</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/Toshiba 2tb.png" alt="">
+                    </div>
+                    <p class="descripcion">Toshiba Canvio Basics 2TB</p>
+                    <span class="precio">59,90€</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/portatil_hp.png" alt="">
+                    </div>
+                    <p class="descripcion">HP 255 G9</p>
+                    <span class="precio">321,90€</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/portatil_lenovo.png" alt="">
+                    </div>
+                    <p class="descripcion">Lenovo IdeaPad Slim 3</p>
+                    <span class="precio">447,90€</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../Images/portatil_asus.png" alt="">
+                    </div>
+                    <p class="descripcion">ASUS M515UA-EJ522W</p>
+                    <span class="precio">449,90€</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">txema ponme un 10</h2>
+                <p id="descripcion">si cuela cuela</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <button>Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../Scripts/tienda.js"></script>
+</main>
+<footer>
+    <p>&copy; 2023-2024 PeppoBytes | All Rights Reserved.</p>
+</footer>
+</body>
+</html>

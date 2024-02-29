@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Principal structure*/
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*Header styles*/
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: #fff;
+  z-index: 1;
+  height: 6rem;
+  text-align: center;
+  margin: 0 auto;
+}
+#lettering-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 6rem;
+  width: 12rem;
+  margin: 0 auto;
+  margin-left: 1rem;
+  margin-top: -6.5rem;
+  margin-right: 1rem;
+} 
+.lettering {
+  position: absolute;
+  width: 12.3rem;
+  height: 6rem;
+  display: flex;
+  flex: 1;
+}
+#franja-buttons {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 6rem;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+button {
+  font-size: 16px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 2rem;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: color;
+  display: flex;
+  z-index: 1;
+  left: 1rem;
+}
+button:focus,
+button:hover {
+  color: #fff;
+}
+button:focus:after,
+button:hover:after {
+  width: 90%;
+  left: 5%;
+}
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: 30px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, left;
+}
+.dropbtn:after{
+  content: "";
+  pointer-events: none;
+  bottom: 15px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, left;
+}
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  z-index: 1;
+  margin: 6px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  align-content: center;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgb(0, 0, 0, 0.8);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 1024px){
+  .lettering{
+    width: 8rem;
+    height: 4rem;
+    top: 1rem;
+  }
+}
+@media screen and (max-width: 768px){
+  .lettering{
+    width: 8rem;
+    height: 4rem;
+    top: 1rem;
+    left: 0.5rem;
+  }
+}
+@media screen and (max-width: 700px){
+  .lettering{
+    width: 0rem;
+    height: 0rem;
+    top: 1rem;
+    left: 0.5rem;
+  }
+}
+#SignIn{
+  font-size: 16px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 0 auto;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+  margin-right: 1rem;
+  position: absolute;
+  left: 80rem;
+  top: 2rem;
+}
+#SignIn:hover{
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+@media screen and (max-width: 1920px) {
+  #SignIn{
+    left: 100rem;
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 1740px){
+  #SignIn{
+    left: 80rem;
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 1460px){
+  #SignIn{
+    left: 75rem;
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 1280px){
+  #SignIn{
+    left: 65rem;
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 1120px){
+  #SignIn{
+    left: 55rem;
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 960px){
+  #SignIn{
+    left: 47.5rem;
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 720px){
+  #SignIn{
+    left: 35.5;
+    top: 2rem;
+  }
+}
+
+/*Video styles*/
+.video{
+  border: solid 2px white;
+  display: flex;
+  flex-wrap: wrap;
+}
+video{
+  width: 100%;
+}
+
+/*Articles styles*/
+
+/*Articles with the image at the left side*/
+main article{
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  padding: 2rem;
+  top: -1rem;
+  justify-content: space-between;
+}
+main article .img{
+  display: flex;
+  flex-flow: row wrap;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  margin: 1rem;
+}
+main article .img img{
+  padding: 2rem;
+  margin: 4px;
+  width: 650px;
+  height: 375px;
+  
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+@media screen and (max-width: 1920px){
+  main article .img img{
+    width: 450px;
+    height: 275px;
+  }
+  main article .title{
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 1440px){
+  main article .img img{
+    padding: 2rem;
+    margin: 4px;
+    width: 0px;
+    height: 0px;
+    
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+  main article .text p{
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+main article .content{
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+  padding: 2rem;
+  margin: 4px;
+  width: fit-content;
+
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+main article .title{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  font-size: 23px;
+}
+main article .title h1{
+  margin: 2rem;
+  margin-left: 3rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 800;
+}
+main article .text{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  color: white;
+}
+main article .text p{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2rem;
+  margin: 1rem;
+  width: 500px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/*Scrolling animations for all the cards*/
+@keyframes reveal {
+  from {
+    opacity: 0;
+    tranlate: 0 100px;
+    scale: 0.7;
+  }
+  to{
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+/*Parallax effect*/
+#parallax1{
+  display: flex;
+  padding: 6rem;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Images/leaves.jpg");
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax1 div{
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgb(210, 210, 210);
+  border-radius: 10px;
+  width: 30rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+#parallax1 div h1{
+  color: white;
+  width: 30rem;
+  font-size: 46px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#parallax2{
+  display: flex;
+  padding: 6rem;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Images/foggy_forest.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax2 div{
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 30px;
+  width: 30rem;
+  height: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+#parallax2 div h3{
+  color: white;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+#parallax2 div p{
+  color: white;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+#parallax3{
+  display: flex;
+  padding: 6rem;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Images/nature.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax3 div{
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 30px;
+  width: 30rem;
+  height: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+#parallax3 div h3{
+  color: white;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+#parallax3 div p{
+  color: white;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+/*Footer*/
+footer {
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+footer p{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+}

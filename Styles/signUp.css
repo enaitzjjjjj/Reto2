@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: url("../Images/waterfall.jpg");
+    background-position: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.form-box {
+    max-width: 300px;
+    background: rgb(0, 0, 0, 0.8);
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgb(177, 176, 176);
+    color: #ffffff;
+  }
+  
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+  }
+
+  /*Form text*/
+  .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #aeaeae;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /*Inputs box*/
+  .form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: rgb(71, 71, 71, 0.8);
+    margin: 1rem 0 .5rem;
+    width: 100%;
+    font: optional;
+  }
+  
+  .input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    font-size: .9rem;
+    font-family: 'DM Sans', sans-serif;
+    padding: 8px 15px;
+    color: whitesmoke;
+  }
+  
+  .form-section {
+    padding: 16px;
+    font-size: .85rem;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(0, 0, 0, 0.8);
+    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+  }
+  
+  .form-section a {
+    font-weight: bold;
+    color: #5d03b1;
+    transition: color .3s ease;
+  }
+  
+  .form-section a:hover {
+    color: #3c0372;
+    text-decoration: underline;
+  }
+  
+  /*Button*/
+  .form button {
+    background-color: #5d03b1;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #3c0372;
+  }
+
+  #back {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: rgb(255, 255, 255, 0.7);
+    margin-top: 2rem;
+   }
+   
+   #back > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   #back:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   #back:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #2d7739;
+    transform: translateY(-2px);
+   }
+   #back span a{
+    text-decoration: none;
+    color: black;
+   }
